@@ -1,5 +1,5 @@
 {% set name = "refinitiv-data" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/refinitiv-data-{{ version }}.tar.gz
-  sha256: 471a0decd1e16d70c25084f33439a0038ba65a99c15e571fd55d03c766aceb41
+  sha256: 10ea9b91ab5620ea0d7032b66c19294dce289d7d64cf254fc9f751a6fcd56a93
 
 build:
   noarch: python
@@ -43,11 +43,11 @@ test:
     - refinitiv
 
 about:
-  home: "https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-library-for-python"
+  home: https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-library-for-python
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Client for Refinitiv Data Platform API's"
+  summary: Client for Refinitiv Data Platform API's
   description: |
     The Refinitiv Data Library for Python provides a set of ease-of-use interfaces offering your applications a uniform access to the breadth and depth of financial data and services available on the Refinitiv Data Platform.
 
