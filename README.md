@@ -1,11 +1,11 @@
-About refinitiv-data
-====================
+About refinitiv-data-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/refinitiv-data-feedstock/blob/main/LICENSE.txt)
 
 Home: https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-library-for-python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/refinitiv-data-feedstock/blob/main/LICENSE.txt)
 
 Summary: Client for Refinitiv Data Platform API's
 
