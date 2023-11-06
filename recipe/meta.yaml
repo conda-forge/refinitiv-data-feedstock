@@ -1,5 +1,5 @@
 {% set name = "refinitiv-data" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/refinitiv-data-{{ version }}.tar.gz
-  sha256: 28861d3e7a53f0a5ce7433edf628a17b9aa8d92ae5724455bc4679d67c7a05d2
+  sha256: bddafcd5e83c8ccc814ce231854162bf8593cda27e48e82869f70e6377aecd1a
 
 build:
   noarch: python
