@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 3eaa65b39acea782d1c0db7e7b8f60f23c30abb71aa005d7787c16ca9e159c2d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - appdirs >=1.4.3,<=1.4.4
     - pyee <=9.0.4
     - httpx >=0.18,<=0.23.0
@@ -39,6 +39,8 @@ requirements:
     - jinja2 >=3.0.3,<4.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - refinitiv
 
